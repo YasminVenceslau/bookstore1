@@ -9,10 +9,6 @@ class OrderViewSet(ModelViewSet):
     authentication_classes = [SessionAuthentication, BasicAuthentication, TokenAuthentication]
     permission_classes = [IsAuthenticated]
     serializer_class = OrderSerializer
-<<<<<<< Updated upstream
-    queryset = Order.objects.all().order_by("id")
-=======
 
     def get_queryset(self):
         return Order.objects.all().order_by("id")
->>>>>>> Stashed changes
