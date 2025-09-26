@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     'django_extensions',
     'order',
     'product',
+    "rest_framework",
+    "debug_toolbar",
+    "rest_framework.authtoken",
 ]
 
 MIDDLEWARE = [
